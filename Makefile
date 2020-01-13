@@ -3,6 +3,8 @@ NAMEA = libmx.a
 INC = libmx.h
 
 SRC = mx_sort_list.c\
+	mx_isdigit.c\
+	mx_isalpha.c\
 	mx_list_size.c\
 	mx_pop_back.c\
 	mx_pop_front.c\
@@ -57,6 +59,8 @@ SRC = mx_sort_list.c\
 	mx_binary_search.c
 
 OBJ = mx_sort_list.o\
+	mx_isdigit.o\
+	mx_isalpha.o\
 	mx_list_size.o\
 	mx_pop_back.o\
 	mx_pop_front.o\
