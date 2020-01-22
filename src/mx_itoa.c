@@ -9,8 +9,11 @@ char *mx_itoa(int number) {
         size++;
         r *= -1;
     }
-    if (number == 0)
-        return mx_strdup("0");
+    if (number == 0) {
+        str = mx_strnew(1);
+        str[0] = '0';
+        return str;
+    }
     for (long w = r; w > 0; w /= 10, size++);
     str = mx_strnew(size);
     if (number < 0)

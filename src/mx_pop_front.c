@@ -13,9 +13,7 @@ void mx_pop_front(t_list **head) {
 
     n_node = *head;
     *head = (*head)->next;
-
-    if (malloc_size(n_node->data))
-        free(n_node->data);
+    free(n_node->data);
     free(n_node);
 }
 

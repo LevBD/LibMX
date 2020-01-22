@@ -5,5 +5,6 @@ int mx_strncmp(const char *str1, const char *str2, int len_str2) {
         if (str1[i] != str2[i])
             return str1[i] - str2[i];
     }
-    return *str1 - *str2;
+    return 0;
 }
+

@@ -16,7 +16,7 @@ char *mx_del_extra_spaces(const char *str) {
         j++;
     }
     res = mx_strnew(j);
-    res = mx_strncpy(res, temp, j);
+    res = strncpy(res, temp, j);
     mx_strdel(&temp);
     return res;
 }

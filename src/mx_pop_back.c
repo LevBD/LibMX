@@ -7,10 +7,7 @@ void mx_pop_back(t_list **head) {
         temp = *head;
         while (temp->next->next)
             temp = temp->next;
-
-        if (malloc_size(temp->data))
-            free(temp->next->data);
-        
+        free(temp->next->data);
         free(temp->next);
         temp->next = NULL;
     }
@@ -19,3 +16,4 @@ void mx_pop_back(t_list **head) {
         *head = NULL;
     }
 }
+
