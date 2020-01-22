@@ -47,6 +47,8 @@ SRC = mx_sort_list.c\
 	mx_nbr_to_hex.c\
 	mx_itoa.c\
 	mx_isspace.c\
+	mx_isdigit.c\
+	mx_isalpha.c\
 	mx_hex_to_nbr.c\
 	mx_get_substr_index.c\
 	mx_get_char_index.c\
@@ -101,6 +103,8 @@ OBJ = mx_sort_list.o\
 	mx_nbr_to_hex.o\
 	mx_itoa.o\
 	mx_isspace.o\
+	mx_isdigit.o\
+	mx_isalpha.o\
 	mx_hex_to_nbr.o\
 	mx_get_substr_index.o\
 	mx_get_char_index.o\

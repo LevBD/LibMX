@@ -51,6 +51,8 @@ int mx_count_words(const char *str, char c);
 char *mx_strnew(const int size);
 char *mx_strtrim(const char *str);
 bool mx_isspace(char c); //Моя функция;
+bool mx_isalpha(int c); //Моя функция;
+bool mx_isdigit(int c); //Моя функция;
 char *mx_del_extra_spaces(const char *str);
 char **mx_strsplit(const char *s, char c); //Не сделана;
 char *mx_strjoin(const char *s1, const char *s2);
